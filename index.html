@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">Typing<span>Core</span></div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Test</a>
+        <a href="#">About</a>
+        <a href="#">Tips</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+    <div id = "loginBox" class = "Box">
+        <p>Test your typing speed online and improve your typing skills for free.</p>
+        <h2>Login</h2>
+        <input type="text" id="user" placeholder="Username"><br>
+        <input type="password" id="pass" placeholder="Password"><br>
+        <button onclick = "login()">Login</button>
+    </div>
+    <div id ="gameBox" style ="display:none">
+        <h1> typing speed test</h1>
+        <select id ="mode">
+            <option value ="word"> WORD MODE    </option>
+            <option value ="sentence"> SENTENCE MODE </option>
+            <option value ="timer"> TIMER MODE    </option>
+        </select>
+        <p id="text">Click Start</p>
+
+    <textarea id="input" placeholder="Start typing..."></textarea><br>
+
+    <button onclick="startGame()">Start</button>
+
+    <h3 id="result"></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
